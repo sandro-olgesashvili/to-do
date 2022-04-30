@@ -3,7 +3,7 @@ const Form = ({ setInputText, inputText, setTodos, todos, setStatus }) => {
     e.preventDefault();
     setTodos([
       ...todos,
-      { text: inputText, complated: false, id: Math.random() * 1000 },
+      { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
 
     setInputText("");

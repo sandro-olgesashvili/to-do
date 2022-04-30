@@ -9,7 +9,7 @@ const Todo = ({ text, setTodos, todos, todo }) => {
         if (item.id === todo.id) {
           return {
             ...item,
-            complated: !item.complated,
+            completed:!item.completed,
           };
         }
         return item
@@ -19,7 +19,7 @@ const Todo = ({ text, setTodos, todos, todo }) => {
 
   return (
     <div className="todo">
-      <li className={`todo-item ${todo.complated ? 'completed' : ''}`}>{text}</li>
+      <li className={`todo-item ${todo.completed ? 'completed' : ''}`}>{text}</li>
       <button onClick={completeHanlder} className="complete-btn">
         <i className="fas fa-check"></i>
       </button>
